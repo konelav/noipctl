@@ -83,7 +83,7 @@ parser.add_argument('--delay', dest='delay', type=int,
 
 handler = logging.StreamHandler()
 handler.setFormatter(logging.Formatter(
-    '%(asctime)s [%(levelname)s] %(message)s'))
+    '[%(levelname)s] %(message)s'))
 logging.root.addHandler(handler)
 
 args = parser.parse_args()

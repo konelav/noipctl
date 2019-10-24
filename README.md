@@ -43,3 +43,5 @@ Alternatively it can be started as daemon via systemd or like.
 Example configuration is in `noipctl.cfg`.
 
 Example systemd service is in `noipctl.service`.
+
+Example of installation procedure for systemd is in `install.sh`.
