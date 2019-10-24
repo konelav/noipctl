@@ -273,7 +273,7 @@ elif args.command == "daemon":
                 ip = current_ip
                 logging.info("New IP detected: %s", ip)
                 results = update(username, password, groups, hosts, ip)
-                logging.debug("Update results: %s", results)
+                logging.info("Update results: %s", results)
         except Exception as ex:
             logging.error("Exception: %s", ex)
             logging.debug(traceback.print_exc())
