@@ -1,0 +1,10 @@
+[Unit]
+Description=NoIP dyndns updater
+After=network.target iptables.service firewalld.service
+
+[Service]
+Type=notify
+ExecStart=/usr/sbin/noipctl.py --config %i.cfg daemon
+
+[Install]
+WantedBy=multi-user.target
